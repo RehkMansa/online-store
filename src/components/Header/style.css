@@ -1,0 +1,18 @@
+.header {
+  height: 6.5rem;
+  padding: 10px 10%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+.header-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  object-fit: contain;
+  height: 45px;
+}
+.header__nav {
+  display: flex;
+  gap: 20px;
+}
