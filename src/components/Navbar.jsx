@@ -4,15 +4,10 @@ import styledComponents from 'styled-components';
 const Nav = styledComponents.nav`
   width:100%;
   display: flex;
-  justify-content:space-between;
+  justify-content:center;
   align-items:center;
-  padding:10px 10%;
+  padding:10px 15%;
 `;
-
-const LogoWrapper = styledComponents.div`
-  img{
-    width:80%
-  }`;
 
 const Menu = styledComponents.div`
   display: flex;
@@ -22,13 +17,11 @@ const Menu = styledComponents.div`
 const Navbar = () => {
   return (
     <Nav>
-      <LogoWrapper>
-        <img src="images/logo.svg" alt="logo" />
-      </LogoWrapper>
       <Menu>
         <a href="#">Home</a>
         <a href="#">Shop</a>
-        <a href="#">Login</a>
+        <a href="#">Product</a>
+        <a href="#">FAQ</a>
       </Menu>
     </Nav>
   );
