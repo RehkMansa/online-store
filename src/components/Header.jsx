@@ -35,10 +35,9 @@ const Header = () => {
         <LogoWrapper>
           <img src="images/logo.svg" alt="logo" />
         </LogoWrapper>
-        <SearchBar />
+        <Navbar />
         <StoreAction />
       </HeaderTop>
-      <Navbar />
     </HeaderWrapper>
   );
 };

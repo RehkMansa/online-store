@@ -11,8 +11,12 @@ const Nav = styledComponents.nav`
 
 const Menu = styledComponents.div`
   display: flex;
-  gap: 10px;
+  gap: 5%;
+  width:100%;
+  align-items:center;
+  justify-content:center;
   text-transform:uppercase;
+  font-weight: 600;
 `;
 const Navbar = () => {
   return (
