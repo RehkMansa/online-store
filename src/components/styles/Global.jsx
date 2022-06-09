@@ -5,6 +5,8 @@ const GlobalStyles = createGlobalStyle`
     font-size: 10px;
     --fs-default: 1.8rem;
     --fw-regular: 400;
+    --fw-header: 500;
+    --fw-bold: 600;
     --lh-regular: 1;
     --ff-body: 'Source Sans Pro', sans-serif;
     --ff-header: 'Kanit', sans-serif;
@@ -33,6 +35,10 @@ const GlobalStyles = createGlobalStyle`
   h5,
   h6 {
     font-family: var(--ff-header);
+    font-weight: var(--fw-header);
+  }
+  h1{
+    font-weight: var(--fw-bold);
   }
   a {
     text-decoration: none;
