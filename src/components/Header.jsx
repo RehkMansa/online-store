@@ -1,15 +1,16 @@
 import styledComponents from 'styled-components';
 import Navbar from './Navbar';
 import StoreAction from './StoreActions';
+import { FaOpencart } from 'react-icons/fa';
 
 const HeaderWrapper = styledComponents.header`
   display:flex;
-  flex-direction: column;
   justify-content: space-between;
+  align-items:center;
   padding: 10px 5%;
   align-items:center;
-  max-height: 75px;
-  height: 75px;
+  max-height: 105px;
+  height: 105px;
   overflow:hidden;
 
 `;
@@ -21,20 +22,24 @@ const HeaderTop = styledComponents.div`
 
   &>*{
     flex: 0.33
-    width:33%;
   }
 `;
 const LogoWrapper = styledComponents.div`
-  img{
-    width:100%;
-    object-fit:contain;
-  }`;
+  display:flex;
+  gap:10px;  
+  align-items:center;
+  text-transform:uppercase;
+  svg{
+    font-size:40px;
+  }
+`;
 const Header = () => {
   return (
     <HeaderWrapper>
       <HeaderTop>
         <LogoWrapper>
-          <img src="images/logo.svg" alt="logo" />
+          <FaOpencart />
+          <h2>E-store</h2>
         </LogoWrapper>
         <Navbar />
         <StoreAction />
