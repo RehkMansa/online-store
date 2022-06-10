@@ -13,10 +13,6 @@ const GlobalStyles = createGlobalStyle`
     --default-color: #000;
     --secondary-color: #fff;
   }
-  :root,
-  body {
-    height: 100%;
-  }
   body {
     font-family: var(--ff-body);
     font-size: var(--fs-default);
@@ -59,11 +55,11 @@ const GlobalStyles = createGlobalStyle`
     border-radius: 24px;
     text-transform: capitalize;
   }
-  button:hover {
+  /* button:hover {
     background-color: var(--secondary-color);
     color: var(--default-color);
     border: 2px solid var(--default-color);
-  }
+  } */
   button:hover,
   a:hover {
     transition: all 0.5s ease-in-out;

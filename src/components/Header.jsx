@@ -1,6 +1,5 @@
 import styledComponents from 'styled-components';
 import Navbar from './Navbar';
-import SearchBar from './SearchBar';
 import StoreAction from './StoreActions';
 
 const HeaderWrapper = styledComponents.header`
@@ -10,6 +9,8 @@ const HeaderWrapper = styledComponents.header`
   padding: 10px 5%;
   align-items:center;
   max-height: 75px;
+  height: 75px;
+  overflow:hidden;
 
 `;
 const HeaderTop = styledComponents.div`
@@ -25,7 +26,7 @@ const HeaderTop = styledComponents.div`
 `;
 const LogoWrapper = styledComponents.div`
   img{
-    width:80%
+    width:100%;
     object-fit:contain;
   }`;
 const Header = () => {

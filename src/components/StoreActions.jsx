@@ -1,4 +1,9 @@
-import { FiHeart, FiShoppingCart, FiAlignJustify } from 'react-icons/fi';
+import {
+  FiHeart,
+  FiShoppingCart,
+  FiAlignJustify,
+  FiSearch,
+} from 'react-icons/fi';
 import styledComponents from 'styled-components';
 
 const Wrapper = styledComponents.div`
@@ -15,6 +20,7 @@ const Wrapper = styledComponents.div`
 const StoreAction = () => {
   return (
     <Wrapper>
+      <FiSearch />
       <FiHeart />
       <FiShoppingCart />
       <FiAlignJustify />
