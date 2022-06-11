@@ -16,7 +16,7 @@ const FormWrapper = styledComponents.form`
   }
 
   input{
-    border: 1px solid;
+    border: 1px solid ${(props) => props.borderColor};
     border-right:none;
     outline: none;
     border-radius: 24px 0 0 24px;
@@ -24,9 +24,9 @@ const FormWrapper = styledComponents.form`
 
 `;
 
-const SearchBar = ({ onSubmit, inputPlaceHolder }) => {
+const SearchBar = ({ onSubmit, inputPlaceHolder, borderColor }) => {
   return (
-    <FormWrapper onSubmit={onSubmit}>
+    <FormWrapper borderColor={borderColor} onSubmit={onSubmit}>
       <Input type="text" placeholder={inputPlaceHolder} />
       <button>
         <FiSearch />

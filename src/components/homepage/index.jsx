@@ -7,7 +7,7 @@ const Homepage = () => {
   return (
     <HomeWrapper>
       <HeroSection />
-      <FeaturedSection />
+      <FeaturedSection /> 
     </HomeWrapper>
   );
 };

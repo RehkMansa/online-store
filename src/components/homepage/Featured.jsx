@@ -1,5 +1,4 @@
 import styledComponents from 'styled-components';
-import SearchBar from '../SearchBar';
 import Card from './Card';
 
 const FeaturedWrapper = styledComponents.div` 
@@ -28,7 +27,6 @@ const FeaturedSection = () => {
   return (
     <FeaturedWrapper>
       <FeaturedInner>
-        <SearchBar />
         <FeaturedRow>
           <Card
             title={'30% Store Discount'}
